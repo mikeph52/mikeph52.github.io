@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike Philippakis — Bioinformatician</title>
+<meta name="description" content="Mike Philippakis — bioinformatician working on genomics pipelines, sequence analysis, and computational biology tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="nav__brand">mike<span class="dot">.</span>philippakis</a>
+  <nav class="nav__links">
+    <a href="#work">work</a>
+    <a href="#experience">experience</a>
+    <a href="#publications">publications</a>
+    <a href="#stack">tools</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO: fake terminal session -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">// Bioinformatics & Genomics</p>
+      <h1>I turn raw reads<br>into <span class="accent">real answers</span>.</h1>
+      <p class="hero__sub">
+        I'm Mike Philippakis, a bioinformatician working on
+        genomics pipelines, sequence analysis, genome assemblies, and computational biology tools
+        that make sense of messy biological data. Welcome to my page! Currently based in IMBBC-HCMR, Iraklion, Crete.
+      </p>
+      <div class="hero__cta">
+        <a href="#work" class="btn btn--primary">See the work</a>
+        <a href="https://drive.google.com/file/d/1tMvR0KDv6stLwW0qVWy5PJq_RoSNPoZ4/view?usp=sharing" class="btn btn--ghost" id="cvLink">CV ↗</a>
+      </div>
+    </div>
+
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal__bar">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="terminal__title">~/mikeph</span>
+      </div>
+      <div class="terminal__body" id="terminalBody"></div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section">
+    <p class="section__eyebrow">01 — Selected work</p>
+    <h2 class="section__title">Selected Projects</h2>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="project__tag">Pipeline</span>
+          <span class="project__year">2026</span>
+        </div>
+        <h3>Nessie </h3>
+        <p>A snakemake workflow for de novo genome assembly from Oxford Nanopore and PacBio HiFi reads.</p>
+        <div class="project__tech">
+          <code>Snakemake</code><code>Python</code><code>Bash</code>
+        </div>
+        <div class="project__links">
+          <a href="#">Live ↗</a>
+          <a href="https://github.com/mikeph52/nessie">Source ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="project__tag">Database</span>
+          <span class="project__year">2024</span>
+        </div>
+        <h3>gFetch </h3>
+        <p>A simple and modern tool for searching and downloading genome data from NCBI Datasets.</p>
+        <div class="project__tech">
+          <code>Python</code>
+        </div>
+        <div class="project__links">
+          <a href="#">Live ↗</a>
+          <a href="https://github.com/mikeph52/gfetch">Source ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__meta">
+          <span class="project__tag">Analysis</span>
+          <span class="project__year">2025</span>
+        </div>
+        <h3>BioGenie </h3>
+        <p>BioGenie is a complete bioinformatics command line tool, written in C++.</p>
+        <div class="project__tech">
+          <code>C/C++</code><code>CLI</code>
+        </div>
+        <div class="project__links">
+          <a href="#">Live ↗</a>
+          <a href="https://github.com/mikeph52/BioGenie">Source ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section--alt">
+    <p class="section__eyebrow">02 — Experience</p>
+    <h2 class="section__title">Where I've worked</h2>
+
+    <div class="timeline">
+
+      <article class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__head">
+            <h3>Bioinformatician </h3>
+            <span class="timeline__date"> March 2026 — Present</span>
+          </div>
+          <p class="timeline__org">Institute of Marine Biology, Biotechnology and Aquaculture, Hellenic Centre for Marine Research</p>
+          <p class="timeline__desc">
+            Worked primarily on developing Nessie, a workflow for de novo genome assembly (Github:https://github.com/
+            mikeph52/nessie).
+            Genome assemblies generated:
+              <ul>
+                <li>Ziphius cavirostris</li>
+                <li>Stenella coeruleoalba</li>
+                <li>Hippospongia communis</li>
+              </ul>
+            <p class="timeline__desc">
+            Another area of focus is Genome decontamination, including the identification and removal of contaminant
+            sequences from genome assemblies.
+            </p>
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__head">
+            <h3>Undergraduate Thesis </h3>
+            <span class="timeline__date">2024 — 2025</span>
+          </div>
+          <p class="timeline__org">LBBA, Hellenic Mediterranean University</p>
+          <p class="timeline__desc">
+            Completed my thesis, titled “Study of the Antimicrobial Properties of Indigenous Yeasts Against Known Plant
+Pathogenic Bacteria”, under the supervision of Assistant Professor Emmanouil Trantas, Department of Agriculture,
+HMU. The study investigated the antimicrobial activity of indigenous yeast strains against known plant pathogenic
+bacteria using microbiological assays, including the cotton swab assay and double-layer assay.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__head">
+            <h3>MSc, Bioinformatics </h3>
+            <span class="timeline__date">2026 — 2028</span>
+          </div>
+          <p class="timeline__org">University of Crete</p>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__head">
+            <h3>BSc Integrated MSc in Agricultural Sciences </h3>
+            <span class="timeline__date">2019 — 2026</span>
+          </div>
+          <p class="timeline__org">Hellenic Mediterranean University</p>
+        </div>
+      </article>
+
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <p class="section__eyebrow">03 — Publications</p>
+    <h2 class="section__title">Selected Publications</h2>
+
+    <div class="pub-list">
+
+      <article class="pub">
+        <p class="pub__title">Nessie: A de novo genome assembly workflow for animal species using long reads</p>
+        <p class="pub__meta">Philippakis, M., et al. — bioArxiv, 2026</p>
+        <div class="pub__links">
+          <a href="#">DOI ↗</a>
+          <a href="#">PDF ↗</a>
+        </div>
+      </article>
+
+      <article class="pub">
+        <p class="pub__title">Study of the Antimicrobial Properties of Indigenous Yeasts Against Known Plant Pathogenic Bacteria</p>
+        <p class="pub__meta">Mermygka, G., et al. — Panhellenic Plant Pathology Conference, 2024</p>
+        <div class="pub__links">
+          <a href="#">DOI ↗</a>
+          <a href="#">PDF ↗</a>
+        </div>
+      </article>
+
+    
+    </div>
+
+    <p class="pub__more">Full list on <a href="https://orcid.org/0009-0008-8088-9503">ORCiD ↗</a></p>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section section--alt">
+    <p class="section__eyebrow">04 — Toolbox</p>
+    <h2 class="section__title">What I reach for</h2>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h4>Languages</h4>
+        <ul><li>Python</li><li>R</li><li>Bash</li><li>C/C++</li><li>Rust</li><li>Snakemake</li></ul>
+      </div>
+      <div class="stack-group">
+        <h4>Genomics</h4>
+        <ul><li>Flye</li><li>HiFiasm</li><li>Samtools</li><li>Kraken 2</li><li>BUSCO</li><li>QUAST</li></ul>
+      </div>
+      <div class="stack-group">
+        <h4>Analysis</h4>
+        <ul><li>Biopython</li><li>Scanpy</li><li>Scikit-learn</li><li>PyTorch</li><li>Pandas / NumPy</li></ul>
+      </div>
+      <div class="stack-group">
+        <h4>Infra</h4>
+        <ul><li>Docker</li><li>Singularity</li><li>Slurm / HPC</li><li>AWS</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section__eyebrow">05 — About</p>
+    <h2 class="section__title">A little more context</h2>
+    <div class="about">
+      
+        I’m a bioinformatician and software developer interested in genomics, evolution, and metagenomics. Most of my work revolves around genome assembly, genome decontamination, and building bioinformatics tools that make working with biological data a little easier.
+
+        I’m currently doing my MSc at the University of Crete, and I’m hoping to continue with a PhD and keep exploring the world of genomics & biology.
+      
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--alt contact">
+    <p class="section__eyebrow">06 — Get in touch</p>
+    <h2 class="section__title">Let's talk</h2>
+    <p class="contact__sub">Feel free to get in touch! If you encounter a specific problem with any of my programs, please open an issue in the respective repository :-)</p>
+    <div class="contact__links">
+      <a href="mailto:mikeph526@outlook.com" class="btn btn--primary">mikeph526@outlook.com</a>
+      <a href="https://github.com/mikeph52" class="btn btn--ghost">GitHub ↗</a>
+      <a href="https://gitlab.com/mikeph52" class="btn btn--ghost">GitLab ↗</a>
+      <a href="https://orcid.org/0009-0008-8088-9503" class="btn btn--ghost">ORCiD ↗</a>
+      <a href="https://www.linkedin.com/in/mike-philippakis-65714723b/" class="btn btn--ghost">LinkedIn ↗</a>
+      <a href="https://drive.google.com/file/d/1tMvR0KDv6stLwW0qVWy5PJq_RoSNPoZ4/view?usp=sharing" class="btn btn--ghost">CV ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Mike Philippakis . <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
